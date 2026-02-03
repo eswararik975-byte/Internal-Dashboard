@@ -1,0 +1,23 @@
+<section>
+  <h2 class="section-title">Daily work logs</h2>
+  <div class="card">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Project</th>
+          <th>Hours</th>
+          <th>Summary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let log of workLogs">
+          <td>{{ log.date }}</td>
+          <td>{{ log.project }}</td>
+          <td>{{ log.hours }}</td>
+          <td>{{ log.summary }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

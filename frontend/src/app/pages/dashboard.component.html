@@ -1,0 +1,31 @@
+<section>
+  <h2 class="section-title">Overview</h2>
+  <div class="card-grid">
+    <div class="card" *ngFor="let metric of metrics">
+      <p>{{ metric.label }}</p>
+      <h3>{{ metric.value }}</h3>
+    </div>
+  </div>
+</section>
+
+<section style="margin-top: 32px;">
+  <h2 class="section-title">Recent project updates</h2>
+  <div class="card">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Owner</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let update of recentUpdates">
+          <td>{{ update.title }}</td>
+          <td>{{ update.owner }}</td>
+          <td><span class="tag">{{ update.status }}</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

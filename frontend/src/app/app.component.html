@@ -1,0 +1,20 @@
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <h1>Internal Dashboard</h1>
+      <p>10–100 employee IT teams</p>
+    </div>
+    <nav class="nav">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Overview</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+      <a routerLink="/work-logs" routerLinkActive="active">Daily Work</a>
+    </nav>
+    <div class="sidebar-footer">
+      <p>Signed in as</p>
+      <strong>you@company.com</strong>
+    </div>
+  </aside>
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

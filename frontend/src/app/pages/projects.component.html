@@ -1,0 +1,23 @@
+<section>
+  <h2 class="section-title">Projects</h2>
+  <div class="card">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Owner</th>
+          <th>Status</th>
+          <th>Timeline</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let project of projects">
+          <td>{{ project.name }}</td>
+          <td>{{ project.owner }}</td>
+          <td><span class="tag">{{ project.status }}</span></td>
+          <td>{{ project.timeline }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
